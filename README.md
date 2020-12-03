@@ -70,6 +70,29 @@ pip3 install robotframework==3.2.2
 pip3 install -r requirements.txt
 ```
 
+## Install Chrome Driver
+
+
+```
+brew cask install chromedriver
+```
+
+http://kenst.com/2015/03/installing-chromedriver-on-mac-osx/
+
+
+## Test robot command
+
+```
+robot
+```
+
+## maybe you can't run robot command try Install python by brew
+
+```
+brew install python3
+```
+
+
 ## Install Docker
 
 ```
