@@ -35,6 +35,9 @@ https://markshust.com/2012/05/02/easiest-way-install-git-flow-mac-os-x/
 
 ```
 python3 -m pip install --upgrade pip
+
+# pip3 version 20.3
+# python3 version 3.9
 ```
 
 
@@ -62,6 +65,7 @@ https://stackoverflow.com/questions/29955500/code-not-working-in-command-line-fo
 
 ```
 pip3 install robotframework==3.2.2
+pip3 install robotframework-seleniumlibrary==4.5.0
 ```
 
 ## pip install All 
@@ -103,13 +107,18 @@ brew install docker
 https://medium.com/crowdbotics/a-complete-one-by-one-guide-to-install-docker-on-your-mac-os-using-homebrew-e818eb4cfc3
 
 
+## Test run docker
+
 Check docker After install
 
 
 ```
-docker --version
-
+docker -v
+docker-compose -v
+# docker version 19.03.13, build 4484c46d9d
+# docker-compose version 1.27.4
 ```
+
 
 ## Install Docker Desktop
 
@@ -118,11 +127,33 @@ run Docker.dmg
 https://www.docker.com/get-started
 
 
+## Install Docker Compose on macOS
+
+เมื่อติดตั้ง docker Desktop จะได้ docker-compose มาด้วย
+
+
 ## Test Hello World
+
 
 ```
 docker run hello-world
 ```
+
+
+## Install Nodejs 
+
+
+https://nodejs.org/en/download/
+
+
+node-v14.15.1.pkg
+
+## install newman
+
+```
+npm install -g newman@5.2.1
+```
+
 
 
 
