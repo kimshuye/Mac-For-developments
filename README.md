@@ -7,7 +7,11 @@ https://www.freecodecamp.org/news/how-to-download-and-install-xcode/
 
 ## Install Brew
 
+
+```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
 
 ## install git flow 
 
@@ -28,6 +32,26 @@ brew install git-flow
 
 
 https://markshust.com/2012/05/02/easiest-way-install-git-flow-mac-os-x/
+
+
+## Install python3 by brew
+
+
+```
+brew install python3
+# or
+brew install python@3.9
+
+```
+
+
+### Optional, PATH environment
+
+
+```
+echo "export PATH=/usr/local/bin:$PATH" >> ~/.zshrc
+
+```
 
 
 
@@ -79,6 +103,8 @@ pip3 install -r requirements.txt
 
 ```
 brew cask install chromedriver
+# or
+brew --cask install chromedriver
 ```
 
 http://kenst.com/2015/03/installing-chromedriver-on-mac-osx/
@@ -86,9 +112,19 @@ http://kenst.com/2015/03/installing-chromedriver-on-mac-osx/
 
 ## Test robot command
 
+
 ```
 robot
 ```
+
+Output:
+
+```
+[ ERROR ] Expected at least 1 argument, got 0.
+
+Try --help for usage information.
+```
+
 
 ## maybe you can't run robot command try Install python by brew
 
@@ -140,13 +176,23 @@ docker run hello-world
 ```
 
 
-## Install Nodejs 
+## Install Nodejs
+
+
+```
+brew install node@15
+```
+
+
+### Install nodejs by GUI 
 
 
 https://nodejs.org/en/download/
 
 
-node-v14.15.1.pkg
+node-v15.3.0.pkg
+
+
 
 ## install newman
 
