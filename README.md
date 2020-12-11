@@ -201,5 +201,14 @@ npm install -g newman@5.2.1
 ```
 
 
+## Install Google SDK
 
 
+```
+brew install --cask google-cloud-sdk
+
+export CLOUDSDK_PYTHON="$(brew --prefix)/opt/python@3.9/libexec/bin/python"
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
+```
