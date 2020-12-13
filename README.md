@@ -13,6 +13,11 @@ https://www.freecodecamp.org/news/how-to-download-and-install-xcode/
 ```
 
 
+# Define git user
+```
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
 ## install git flow 
 
 
@@ -123,6 +128,21 @@ Output:
 [ ERROR ] Expected at least 1 argument, got 0.
 
 Try --help for usage information.
+```
+
+## Run robot to google.com
+
+```
+obot google.robot
+```
+
+```
+==============================================================================
+Google                                                                        
+==============================================================================
+Open google page and input keywords "Robot Framework"                 | PASS |
+------------------------------------------------------------------------------
+Google                                                                | PASS |
 ```
 
 
