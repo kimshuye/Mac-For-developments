@@ -39,6 +39,12 @@ brew install --cask chromedriver
 
 robot
 
+# Install Docker
+brew install docker
+
+docker -v
+docker-compose -v
+
 ## Test Hello World
 docker run hello-world
 
