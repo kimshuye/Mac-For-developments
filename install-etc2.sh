@@ -11,9 +11,8 @@ brew install python@3.9
 
 $(brew --prefix)/bin/python3.9
 
-echo 'alias python3="/usr/local/bin/python3"' >> .zshrc
-
-echo "export PATH=/usr/local/bin:$PATH" >> ~/.zshrc
+echo 'alias python3="/usr/local/bin/python3"' >> ~/.zshrc
+echo 'export PATH=/usr/local/bin:$PATH' >> ~/.zshrc
 
 # $(brew --prefix)/opt/python@3.9/libexec/bin
 # $(brew --prefix)/lib/python3.9/site-packages
@@ -34,6 +33,8 @@ robot
 
 # Install Docker
 brew install docker
+
+
 
 docker -v
 docker-compose -v

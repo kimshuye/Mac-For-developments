@@ -5,28 +5,28 @@
 https://www.freecodecamp.org/news/how-to-download-and-install-xcode/
 
 
-## Install Brew
+## Install Homebrew
 
+by bash
 
-```
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-
-# Define git user
-```
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
-```
-## install git flow 
-
-
-Download and install Homebrew:
-
+by ruby
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 ```
+
+# Define git user
+
+```
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+## install git flow 
 
 
 Then install git flow:
