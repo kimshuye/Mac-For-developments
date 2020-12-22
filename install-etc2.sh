@@ -32,7 +32,7 @@ brew install --cask chromedriver
 robot
 
 # Install Docker
-brew install docker
+brew install docker-machine docker docker-compose
 
 
 

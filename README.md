@@ -133,7 +133,7 @@ Try --help for usage information.
 ## Run robot to google.com
 
 ```
-obot google.robot
+robot google.robot
 ```
 
 ```
@@ -156,7 +156,8 @@ brew install python3
 ## Install Docker
 
 ```
-brew install docker
+brew install docker-machine docker docker-compose
+brew install --cask docker-machine docker docker-compose
 
 ```
 
@@ -168,11 +169,28 @@ https://medium.com/crowdbotics/a-complete-one-by-one-guide-to-install-docker-on-
 Check docker After install
 
 
-```
+```sh
 docker -v
 docker-compose -v
-# docker version 19.03.13, build 4484c46d9d
-# docker-compose version 1.27.4
+docker-machine -v
+# Docker version 19.03.14, build 5eb3275
+# docker-compose version 1.27.4, build unknown
+# docker-machine version 0.16.2, build bd45ab1
+```
+
+## install Kubernetes CLI
+
+```
+brew install kubernetes-cli
+```
+
+## Test run Kubernetes
+
+```bash
+kubectl version
+
+# Client Version: version.Info{Major:"1", Minor:"20", GitVersion:"v1.20.1", GitCommit:"c4d752765b3bbac2237bf87cf0b1c2e307844666", GitTreeState:"clean", BuildDate:"2020-12-19T08:38:20Z", GoVersion:"go1.15.5", Compiler:"gc", Platform:"darwin/amd64"}
+# The connection to the server localhost:8080 was refused - did you specify the right host or port?
 ```
 
 
@@ -183,9 +201,7 @@ run Docker.dmg
 https://www.docker.com/get-started
 
 
-## Install Docker Compose on macOS
-
-เมื่อติดตั้ง docker Desktop จะได้ docker-compose มาด้วย
+*เมื่อติดตั้ง docker Desktop จะได้ docker-compose มาด้วย
 
 
 ## Test Hello World
@@ -204,6 +220,17 @@ brew install node@15
 ```
 
 
+output:
+
+
+```bash
+node -v
+npm -v
+# v15.4.0
+# 7.0.15
+```
+
+
 ### Install nodejs by GUI 
 
 
@@ -218,6 +245,14 @@ node-v15.3.0.pkg
 
 ```
 npm install -g newman@5.2.1
+```
+
+
+output:
+
+```bash
+newman -v
+# 5.2.1
 ```
 
 
