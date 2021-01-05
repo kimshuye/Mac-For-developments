@@ -211,6 +211,55 @@ https://www.docker.com/get-started
 docker run hello-world
 ```
 
+# envsubst
+
+substitute shell variables in text
+
+## Quick Example
+
+`envsubst` will attempt to substitute all variable by default:
+
+```
+$ echo 'substituting ${TEST} ${ALT} ${NADA}' | TEST=abc ALT=alt envsubst
+substituting abc alt
+```
+Or you can give it a constrained list of variables to interpolate:
+
+```
+$ echo 'substituting ${TEST} ${ALT} ${NADA}' | TEST=abc ALT=alt envsubst '$TEST:$ALT'
+substituting abc alt ${NADA}
+```
+
+## MacOSX Installation
+
+Easy to install with homebrew:
+
+```
+$ brew install gettext
+```
+
+But note the formula is keg-only, which means it was not symlinked into /usr/local.
+So while you could directly reference `/usr/local/opt/gettext/bin/envsubst` or add that to the path,
+`brew link` can be used to add the symlinks:
+
+```
+$ brew link --force gettext
+$ which envsubst
+/usr/local/bin/envsubst
+```
+
+When done, you can unlink if desired:
+```
+$ brew unlink gettext
+```
+
+## Credits and References
+* [envsubst: command not found on Mac OS X 10.8](http://stackoverflow.com/questions/23620827/envsubst-command-not-found-on-mac-os-x-10-8)
+* [man envsubst](http://www.unix.com/man-page/linux/1/envsubst/)
+* [gettext](http://brewformulas.org/gettext) - brew formula doc
+* [gettext.rb](https://github.com/Homebrew/homebrew/blob/master/Library/Formula/gettext.rb) - brew formula source
+
+
 
 ## Install Nodejs
 
@@ -253,6 +302,14 @@ output:
 ```bash
 newman -v
 # 5.2.1
+```
+
+
+## Install mysql client
+
+
+```
+brew install mysql-client
 ```
 
 
